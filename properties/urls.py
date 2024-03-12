@@ -18,6 +18,6 @@ urlpatterns = [
     # URL pattern for the property prices vs. crime rate scatter plot visualization
     path('visualizations/property-crime-scatter/', views.scatter_plot_property_crime, name='scatter_plot_property_crime'),
 
-    # Add more patterns for other visualizations here
+    # will more patterns for other visualizations here
 ]
 

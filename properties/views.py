@@ -4,7 +4,6 @@ from .models import Property
 from .serializers import PropertySerializer
 
 @api_view(['GET'])
-# properties/views.py
 import matplotlib.pyplot as plt
 from io import BytesIO
 from django.http import HttpResponse
@@ -37,7 +36,6 @@ def property_prices_by_postcode(request):
 
     return HttpResponse(buffer.getvalue(), content_type='image/png')
 
-# Don't forget to add the corresponding URL pattern in properties/urls.py
 
 
 # properties/views.py
@@ -99,3 +97,4 @@ def scatter_plot_property_crime(request):
     plt.close()
     buffer.seek(0)
 
+############ Will add more visualistions
